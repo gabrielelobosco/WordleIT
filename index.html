@@ -340,6 +340,7 @@ h3 {
 </style>
 <script>
 function d() {
+	let p = 0;
 	document.documentElement.className = "dark_theme";
 	document.getElementById("navpunti").innerHTML = "Streak: " + p;
 }
@@ -523,7 +524,7 @@ function r_cookie() {
 	if(x !== "") {
 		p = parseInt(x);
 	} else {
-		let p = 0;
+		p = 0;
 		c_cookie();
 	}
 }
