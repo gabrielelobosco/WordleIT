@@ -1,10 +1,10 @@
 <html>
 
 <head>
-	<title>WordleIT</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+        <title>WordleIT</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
 </head>
 
 <body onload="d()">
@@ -19,7 +19,7 @@
 	</div>
 	<div class="announcer">
 		<h2 id="result"></h2>
-		<h2 id="word"></span></h2>
+		<h2 id="word"></h2>
 		<div id="container">
 			<h3 id="first"></h3>
 			<h3 id="second"></h3>
