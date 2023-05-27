@@ -1,0 +1,334 @@
+/* Themes */
+
+.dark_theme {
+	--bc: #1e1e1e;
+	--tc: white;
+	--navbc: rgba(17,17,17,.4);
+	--navbt: #3c3c3c;
+	--navbtc: #4d4d4d;
+	--annbc: #292929;
+    --tas: #818385;
+	--fh: 'Itim', cursive;
+}
+
+.light_theme {
+	--bc: #dddddd;
+	--tc: black;
+	--navbc: #cccccc;
+	--navbt: #bbbbbb;
+	--navbtc: #aaaaaa;
+	--annbc: green;
+    --tas: #818385;
+	--fh: 'Itim', cursive;
+}
+
+/* HTML */
+
+html {
+	background-color: var(--bc);
+}
+
+/* Navbar */
+
+.nav {
+	width: 100%;
+	height: 5rem;
+	background-color: var(--navbc);
+	top: 0;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.nav button {
+	width: 4rem;
+	height: 2rem;
+	position: absolute;
+	right: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 2rem;
+	border: none;
+	background-color: var(--navbt);
+}
+
+.nav button #circle {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 100%;
+	background-color: var(--navbtc);
+	position: absolute;
+	transform: translateX(-6px);
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.5, 0.05, 0.25, 1);
+}
+
+.nav,.announcer h3 {
+	color: var(--tc);
+	position: absolute;
+	left: 1rem;
+}
+
+.nav h1 {
+	text-align: center;
+	color: var(--tc);
+	font-family: var(--fh);
+	font-size: 2rem;
+	right: 0;
+	left: 0;
+	position: absolute;
+}
+
+/* Underline */
+
+.underline-container {
+	display: flex;
+	flex-wrap: wrap;
+    text-align: center;
+	justify-content: center;
+	margin-top: 8rem;
+}
+
+#underline {
+	width: 3rem;
+	height: 3rem;
+	border: 1px solid grey;
+	margin: 5px;
+	font-size: 3rem;
+	color: var(--tc);
+    display: flex;
+    justify-content: center;
+    background-color: var(--bc);
+    align-items: center;
+    
+    animation-duration: 0.5s;
+	animation-iteration-count: 1;
+}
+
+#underline::before {
+	content: attr(data-before);
+}
+
+/* Keyboard */
+
+.tastiera {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	margin-top: 3rem;
+}
+
+#tasto {
+	margin-left: 0.5rem;
+	margin-top: 0.3rem;
+	width: 2.5rem;
+	height: 3rem;
+	font-family: monospace;
+	font-size: 1.5rem;
+	color: #f5f5f5d4;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--tas);
+}
+
+#tastob {
+	margin-left: 0.5rem;
+	margin-top: 0.3rem;
+	width: 4rem;
+	height: 3rem;
+	font-size: 1.5rem;
+    border-radius: 3px;
+    border: none;
+    background-color: var(--tas);
+}
+
+.tastiera i {
+    color: white;
+}
+
+.break {
+	flex-basis: 100%;
+	height: 0;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+	#tasto {
+		width: 2rem;
+		height: 2.5rem;
+		font-size: 1.2rem;
+	}
+}
+
+/* Underline-Checked-Styles */
+
+.error {
+    border: 1px solid var(--bc) !important;
+    animation: popResultE 1s 1 forwards;
+}
+
+.right {
+    border: 1px solid var(--bc) !important;
+    animation: popResultC 1s 1 forwards;
+}
+
+.present {
+    border: 1px solid var(--bc) !important;
+    animation: popResultP 1s 1 forwards;
+}
+
+/* Announcer */
+
+.announcer {
+	width: 35rem;
+	height: 35rem;
+	background-color: var(--annbc);
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	border: 2px solid grey;
+	border-radius: 20px;
+	display: none;
+    z-index: 1;
+	animation: announcer 0.75s forwards;
+}
+
+/* Announcer Animation */
+
+@keyframes announcer {
+	from {
+		transform: translateY(-1rem);
+		opacity: 70%;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 100%;
+	}
+}
+
+.announcer #container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.announcer #result {
+	text-align: center;
+	color: var(--tc);
+	font-family: var(--fh);
+	font-size: xx-large;
+}
+
+.announcer #word {
+	text-align: center;
+	color: var(--tc);
+	font-family: var(--fh);
+	font-size: xx-large;
+}
+
+.announcer #first,
+.announcer #second {
+	position: relative;
+}
+
+.announcer button {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 8rem;
+	height: 4rem;
+	margin-top: 7rem;
+	background-color: var(--navbtc);
+	border-radius: 20px;
+	border: 2px solid grey;
+	color: var(--tc);
+	text-transform: uppercase;
+	font-family: var(--fh);
+}
+
+/* Theme Change Animations */
+
+@keyframes tchangel {
+	from {
+		transform: translate(-6px);
+	}
+
+	to {
+		transform: translate(26px);
+	}
+}
+
+@keyframes tchanged {
+	from {
+		transform: translate(26px);
+	}
+
+	to {
+		transform: translate(-6px);
+	}
+}
+
+/* Underline-Animations */
+
+@keyframes popText {
+    from {
+    font-size: 3.3rem;
+    }
+    
+    to {
+    font-size: 3em;
+    }
+}
+
+/* Underline-Checked-Animations */
+
+@keyframes popResultC {
+    from {
+        transform: rotateX(0deg);
+        background-color: var(--bc);
+    }
+
+    to {
+        transform: rotateX(360deg);
+        background-color: #528d4d;
+    }
+}
+@keyframes popResultP {
+    from {
+        transform: rotateX(0deg);
+        background-color: var(--bc);
+    }
+
+    to {
+        transform: rotateX(360deg);
+        background-color: #b59f3a;
+    }
+}
+@keyframes popResultE {
+    from {
+        transform: rotateX(0deg);
+        background-color: var(--bc);
+    }
+
+    to {
+        transform: rotateX(360deg);
+        background-color: #3a3a3c;
+    }
+}
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
