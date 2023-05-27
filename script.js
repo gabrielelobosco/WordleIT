@@ -209,13 +209,13 @@ window.addEventListener("keydown", function(e) {
                 elems[i].className = "right";
 			} else {
 
-				if(parola.indexOf(elems[i].getAttribute('data-before')) > -1) { // PRESENTI
+				if(parola.indexOf(elems[i].getAttribute('data-before')) > -1) {
 					presenti.push(elems[i].getAttribute('data-before'));
                     elems[i].style.backgroundColor = "";
                     elems[i].className = "present";
 				} else {
 
-					errate.push(elems[i].getAttribute('data-before')); // ERRATE
+					errate.push(elems[i].getAttribute('data-before'));
                     elems[i].style.backgroundColor = "";
                     elems[i].className = "error";
 				}
