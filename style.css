@@ -90,8 +90,8 @@ h3 {
 #underline {
 	width: 3rem;
 	height: 3rem;
-	border: 1px solid grey;
-	margin: 5px;
+	border: 1px solid #4e4e4e;
+	margin: 3px;
 	font-size: 3rem;
 	color: var(--tc);
     display: flex;
@@ -150,31 +150,31 @@ h3 {
 
 @media screen and (max-width: 768px) {
 	#tasto {
-		width: 1.5rem;
-		height: 2.5rem;
+		width: 1rem;
+		height: 3rem;
 		font-size: 1.2rem;
-        flex: 1 1 auto;
+        flex: auto;
 	}
 }
 
 .error {
     border: 1px solid var(--bc) !important;
-    animation: popResultE 1s 1 forwards;
+    animation: popResultE 1s 1 forwards !important;
 }
 
 .right {
     border: 1px solid var(--bc) !important;
-    animation: popResultC 1s 1 forwards;
+    animation: popResultC 1s 1 forwards !important;
 }
 
 .present {
     border: 1px solid var(--bc) !important;
-    animation: popResultP 1s 1 forwards;
+    animation: popResultP 1s 1 forwards !important;
 }
 
 .announcer {
-	width: 35rem;
-	height: 35rem;
+	width: 60vh;
+	height: 75vh;
 	background-color: var(--annbc);
 	position: absolute;
 	left: 0;

@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css">
 </head>
 
+
 <body onload="d()">
 
     <!-- Navbar -->
@@ -82,39 +83,39 @@
 		<div class="break"></div>
 	</div>
 
-    <!-- Tastiera -->
+    <!-- Tastiera QWERTY on-screen -->
 
-	<form class="tastiera" id="input_form">
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="A">A</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="B">B</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="C">C</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="D">D</button>
+	<form class="tastiera" id="input_form" method="post">
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="Q">Q</button>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="W">W</button>
 		<button type="submit" name="tasto" id="tasto" class="neutral" value="E">E</button>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="R">R</button>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="T">T</button>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="Y">Y</button>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="U">U</button>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="I">I</button>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="O">O</button>
+        <button type="submit" name="tasto" id="tasto" class="neutral" value="P">P</button>
+		<div class="break"></div>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="A">A</button>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="S">S</button>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="D">D</button>
 		<button type="submit" name="tasto" id="tasto" class="neutral" value="F">F</button>
 		<button type="submit" name="tasto" id="tasto" class="neutral" value="G">G</button>
 		<button type="submit" name="tasto" id="tasto" class="neutral" value="H">H</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="I">I</button>
-		<div class="break"></div>
 		<button type="submit" name="tasto" id="tasto" class="neutral" value="J">J</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="K">K</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="L">L</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="M">M</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="N">N</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="O">O</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="P">P</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="Q">Q</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="R">R</button>
+        <button type="submit" name="tasto" id="tasto" class="neutral" value="K">K</button>
+        <button type="submit" name="tasto" id="tasto" class="neutral" value="L">L</button>
 		<div class="break"></div>
-            <button type="submit" name="tasto" id="tastob" class="neutral" value="BACK"><i class="fa-regular fa-delete-left"></i></button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="S">S</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="T">T</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="U">U</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="V">V</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="W">W</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="X">X</button>
-		<button type="submit" name="tasto" id="tasto" class="neutral" value="Y">Y</button>
+        <button type="submit" name="tasto" id="tastob" class="neutral" value="BACK"><i class="fa-regular fa-delete-left"></i></button>
 		<button type="submit" name="tasto" id="tasto" class="neutral" value="Z">Z</button>
-            <button type="submit" name="tasto" id="tastob" class="neutral" value="ENT"><i class="fa-regular fa-turn-down-left"></i></button>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="X">X</button>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="C">C</button>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="V">V</button>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="B">B</button>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="N">N</button>
+		<button type="submit" name="tasto" id="tasto" class="neutral" value="M">M</button>
+        <button type="submit" name="tasto" id="tastob" class="neutral" value="ENT"><i class="fa-regular fa-turn-down-left"></i></button>
 	</form>
 </body>
 
@@ -122,316 +123,316 @@
 
 
 <style>
-	.dark_theme {
-		--bc: #1e1e1e;
-		--tc: white;
-		--navbc: rgba(17,17,17,.4);
-		--navbt: #3c3c3c;
-		--navbtc: #4d4d4d;
-		--annbc: #292929;
-		--tas: #818385;
-		--fh: 'Itim', cursive;
-	}
-	
-	.light_theme {
-		--bc: #dddddd;
-		--tc: black;
-		--navbc: #cccccc;
-		--navbt: #bbbbbb;
-		--navbtc: #aaaaaa;
-		--annbc: green;
-		--tas: #818385;
-		--fh: 'Itim', cursive;
-	}
-	
-	html {
-		background-color: var(--bc);
-	}
-	
-	.nav {
-		width: 100%;
-		height: 5rem;
-		background-color: var(--navbc);
-		top: 0;
-		text-align: center;
-		position: fixed;
-		left: 0;
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
-	}
-	
-	.nav button {
-		width: 4rem;
-		height: 2rem;
-		position: absolute;
-		right: 1rem;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		border-radius: 2rem;
-		border: none;
-		background-color: var(--navbt);
-	}
-	
-	.nav button #circle {
-		width: 2rem;
-		height: 2rem;
-		border-radius: 100%;
-		background-color: var(--navbtc);
-		position: absolute;
-		transform: translateX(-6px);
-		animation-duration: 1s;
-		animation-iteration-count: 1;
-		animation-fill-mode: forwards;
-		animation-timing-function: cubic-bezier(0.5, 0.05, 0.25, 1);
-	}
-	
-	h3 {
-		color: var(--tc);
-		position: absolute;
-		left: 1rem;
-	}
-	
-	.nav h1 {
-		text-align: center;
-		color: var(--tc);
-		font-family: var(--fh);
-		font-size: 2rem;
-		right: 0;
-		left: 0;
-		position: absolute;
-	}
-	
-	.underline-container {
-		display: flex;
-		flex-wrap: wrap;
-		text-align: center;
-		justify-content: center;
-		margin-top: 8rem;
-	}
-	
-	#underline {
-		width: 3rem;
-		height: 3rem;
-		border: 1px solid grey;
-		margin: 5px;
-		font-size: 3rem;
-		color: var(--tc);
-		display: flex;
-		justify-content: center;
-		background-color: var(--bc);
-		align-items: center;
-		
-		animation-duration: 0.5s;
-		animation-iteration-count: 1;
-	}
-	
-	#underline::before {
-		content: attr(data-before);
-	}
-	
-	.tastiera {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-content: center;
-		margin-top: 3rem;
-	}
-	
+.dark_theme {
+	--bc: #1e1e1e;
+	--tc: white;
+	--navbc: rgba(17,17,17,.4);
+	--navbt: #3c3c3c;
+	--navbtc: #4d4d4d;
+	--annbc: #292929;
+    --tas: #818385;
+	--fh: 'Itim', cursive;
+}
+
+.light_theme {
+	--bc: #dddddd;
+	--tc: black;
+	--navbc: #cccccc;
+	--navbt: #bbbbbb;
+	--navbtc: #aaaaaa;
+	--annbc: green;
+    --tas: #818385;
+	--fh: 'Itim', cursive;
+}
+
+html {
+	background-color: var(--bc);
+}
+
+.nav {
+	width: 100%;
+	height: 5rem;
+	background-color: var(--navbc);
+	top: 0;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.nav button {
+	width: 4rem;
+	height: 2rem;
+	position: absolute;
+	right: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 2rem;
+	border: none;
+	background-color: var(--navbt);
+}
+
+.nav button #circle {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 100%;
+	background-color: var(--navbtc);
+	position: absolute;
+	transform: translateX(-6px);
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.5, 0.05, 0.25, 1);
+}
+
+h3 {
+	color: var(--tc);
+	position: absolute;
+	left: 1rem;
+}
+
+.nav h1 {
+	text-align: center;
+	color: var(--tc);
+	font-family: var(--fh);
+	font-size: 2rem;
+	right: 0;
+	left: 0;
+	position: absolute;
+}
+
+.underline-container {
+	display: flex;
+	flex-wrap: wrap;
+    text-align: center;
+	justify-content: center;
+	margin-top: 8rem;
+}
+
+#underline {
+	width: 3rem;
+	height: 3rem;
+	border: 1px solid #4e4e4e;
+	margin: 3px;
+	font-size: 3rem;
+	color: var(--tc);
+    display: flex;
+    justify-content: center;
+    background-color: var(--bc);
+    align-items: center;
+    
+    animation-duration: 0.5s;
+	animation-iteration-count: 1;
+}
+
+#underline::before {
+	content: attr(data-before);
+}
+
+.tastiera {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	margin-top: 3rem;
+}
+
+#tasto {
+	margin-left: 0.5rem;
+	margin-top: 0.3rem;
+	width: 2.5rem;
+	height: 3rem;
+	font-family: monospace;
+	font-size: 1.5rem;
+	color: #f5f5f5d4;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--tas);
+}
+
+#tastob {
+	margin-left: 0.5rem;
+	margin-top: 0.3rem;
+	width: 3rem;
+	height: 3rem;
+	font-size: 1.5rem;
+    border-radius: 3px;
+    border: none;
+    background-color: var(--tas);
+}
+
+.tastiera i {
+    color: white;
+}
+
+.break {
+	flex-basis: 100%;
+	height: 0;
+}
+
+@media screen and (max-width: 768px) {
 	#tasto {
-		margin-left: 0.5rem;
-		margin-top: 0.3rem;
-		width: 2.5rem;
+		width: 1rem;
 		height: 3rem;
-		font-family: monospace;
-		font-size: 1.5rem;
-		color: #f5f5f5d4;
-		border: none;
-		border-radius: 3px;
-		background-color: var(--tas);
+		font-size: 1.2rem;
+        flex: auto;
 	}
-	
-	#tastob {
-		margin-left: 0.5rem;
-		margin-top: 0.3rem;
-		width: 3rem;
-		height: 3rem;
-		font-size: 1.5rem;
-		border-radius: 3px;
-		border: none;
-		background-color: var(--tas);
+}
+
+.error {
+    border: 1px solid var(--bc) !important;
+    animation: popResultE 1s 1 forwards !important;
+}
+
+.right {
+    border: 1px solid var(--bc) !important;
+    animation: popResultC 1s 1 forwards !important;
+}
+
+.present {
+    border: 1px solid var(--bc) !important;
+    animation: popResultP 1s 1 forwards !important;
+}
+
+.announcer {
+	width: 60vh;
+	height: 75vh;
+	background-color: var(--annbc);
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	border: 2px solid grey;
+	border-radius: 20px;
+	display: none;
+    z-index: 1;
+	animation: announcer 0.75s forwards;
+}
+
+@keyframes announcer {
+	from {
+		transform: translateY(-1rem);
+		opacity: 70%;
 	}
-	
-	.tastiera i {
-		color: white;
+
+	to {
+		transform: translateY(0);
+		opacity: 100%;
 	}
-	
-	.break {
-		flex-basis: 100%;
-		height: 0;
+}
+
+.announcer #container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.announcer #result {
+	text-align: center;
+	color: var(--tc);
+	font-family: var(--fh);
+	font-size: xx-large;
+}
+
+.announcer #word {
+	text-align: center;
+	color: var(--tc);
+	font-family: var(--fh);
+	font-size: xx-large;
+}
+
+.announcer #first,
+.announcer #second {
+	position: relative;
+}
+
+.announcer button {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 8rem;
+	height: 4rem;
+	margin-top: 7rem;
+	background-color: var(--navbtc);
+	border-radius: 20px;
+	border: 2px solid grey;
+	color: var(--tc);
+	text-transform: uppercase;
+	font-family: var(--fh);
+}
+
+@keyframes tchangel {
+	from {
+		transform: translate(-6px);
 	}
-	
-	@media screen and (max-width: 768px) {
-		#tasto {
-			width: 1.5rem;
-			height: 2.5rem;
-			font-size: 1.2rem;
-			flex: 1 1 auto;
-		}
+
+	to {
+		transform: translate(26px);
 	}
-	
-	.error {
-		border: 1px solid var(--bc) !important;
-		animation: popResultE 1s 1 forwards;
+}
+
+@keyframes tchanged {
+	from {
+		transform: translate(26px);
 	}
-	
-	.right {
-		border: 1px solid var(--bc) !important;
-		animation: popResultC 1s 1 forwards;
+
+	to {
+		transform: translate(-6px);
 	}
-	
-	.present {
-		border: 1px solid var(--bc) !important;
-		animation: popResultP 1s 1 forwards;
-	}
-	
-	.announcer {
-		width: 35rem;
-		height: 35rem;
-		background-color: var(--annbc);
-		position: absolute;
-		left: 0;
-		right: 0;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: auto;
-		border: 2px solid grey;
-		border-radius: 20px;
-		display: none;
-		z-index: 1;
-		animation: announcer 0.75s forwards;
-	}
-	
-	@keyframes announcer {
-		from {
-			transform: translateY(-1rem);
-			opacity: 70%;
-		}
-	
-		to {
-			transform: translateY(0);
-			opacity: 100%;
-		}
-	}
-	
-	.announcer #container {
-		display: flex;
-		justify-content: space-evenly;
-	}
-	
-	.announcer #result {
-		text-align: center;
-		color: var(--tc);
-		font-family: var(--fh);
-		font-size: xx-large;
-	}
-	
-	.announcer #word {
-		text-align: center;
-		color: var(--tc);
-		font-family: var(--fh);
-		font-size: xx-large;
-	}
-	
-	.announcer #first,
-	.announcer #second {
-		position: relative;
-	}
-	
-	.announcer button {
-		position: absolute;
-		left: 0;
-		right: 0;
-		margin-left: auto;
-		margin-right: auto;
-		width: 8rem;
-		height: 4rem;
-		margin-top: 7rem;
-		background-color: var(--navbtc);
-		border-radius: 20px;
-		border: 2px solid grey;
-		color: var(--tc);
-		text-transform: uppercase;
-		font-family: var(--fh);
-	}
-	
-	@keyframes tchangel {
-		from {
-			transform: translate(-6px);
-		}
-	
-		to {
-			transform: translate(26px);
-		}
-	}
-	
-	@keyframes tchanged {
-		from {
-			transform: translate(26px);
-		}
-	
-		to {
-			transform: translate(-6px);
-		}
-	}
-	
-	@keyframes popText {
-		from {
-		font-size: 3.3rem;
-		}
-		
-		to {
-		font-size: 3em;
-		}
-	}
-	
-	@keyframes popResultC {
-		from {
-			transform: rotateX(0deg);
-			background-color: var(--bc);
-		}
-	
-		to {
-			transform: rotateX(360deg);
-			background-color: #528d4d;
-		}
-	}
-	@keyframes popResultP {
-		from {
-			transform: rotateX(0deg);
-			background-color: var(--bc);
-		}
-	
-		to {
-			transform: rotateX(360deg);
-			background-color: #b59f3a;
-		}
-	}
-	@keyframes popResultE {
-		from {
-			transform: rotateX(0deg);
-			background-color: var(--bc);
-		}
-	
-		to {
-			transform: rotateX(360deg);
-			background-color: #3a3a3c;
-		}
-	}
-	
-	@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-	</style>
+}
+
+@keyframes popText {
+    from {
+    font-size: 3.3rem;
+    }
+    
+    to {
+    font-size: 3em;
+    }
+}
+
+@keyframes popResultC {
+    from {
+        transform: rotateX(0deg);
+        background-color: var(--bc);
+    }
+
+    to {
+        transform: rotateX(360deg);
+        background-color: #528d4d;
+    }
+}
+@keyframes popResultP {
+    from {
+        transform: rotateX(0deg);
+        background-color: var(--bc);
+    }
+
+    to {
+        transform: rotateX(360deg);
+        background-color: #b59f3a;
+    }
+}
+@keyframes popResultE {
+    from {
+        transform: rotateX(0deg);
+        background-color: var(--bc);
+    }
+
+    to {
+        transform: rotateX(360deg);
+        background-color: #3a3a3c;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+</style>
 
 <!-- GITHUB-PAGES require js to be with HTML (or 405 Not Allowed would appear)-->
 
@@ -498,7 +499,7 @@ $('button').on('click', function() {
 
     /* If at the end of the row user click ENTER: ent=1 */
 
-    if(c%5==0 && value == "ENT") 
+    if(c%5==0 && value == "ENT")
         ent = 1;
 
     /* If user try to write at the start of a new row block it if ent was not pressed */
@@ -647,13 +648,13 @@ window.addEventListener("keydown", function(e) {
                 elems[i].className = "right";
 			} else {
 
-				if(parola.indexOf(elems[i].getAttribute('data-before')) > -1) { // PRESENTI
+				if(parola.indexOf(elems[i].getAttribute('data-before')) > -1) {
 					presenti.push(elems[i].getAttribute('data-before'));
                     elems[i].style.backgroundColor = "";
                     elems[i].className = "present";
 				} else {
 
-					errate.push(elems[i].getAttribute('data-before')); // ERRATE
+					errate.push(elems[i].getAttribute('data-before'));
                     elems[i].style.backgroundColor = "";
                     elems[i].className = "error";
 				}
@@ -698,9 +699,9 @@ function ann(res, rows, word) {
 	if(res == 1) {
 		document.getElementById("result").innerHTML = "HAI <span style='color:green'>VINTO</span>!";
 		document.getElementById("second").innerHTML = "Streak: " + parseInt(p + 1);
-		
+
         /* Update cookie (if user win) */
-        u_cookie();
+		u_cookie();
 
 		if(rows == 1) document.getElementById("first").innerHTML = "Hai indovinato in <span style='color:green'>" + rows + "</span> tentativo";
 		else document.getElementById("first").innerHTML = "Hai indovinato in <span style='color:yellow'>" + rows + "</span> tentativi";
