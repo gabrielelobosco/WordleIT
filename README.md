@@ -13,7 +13,7 @@
     <a href="https://github.com/LobbyLobs/WordleIT"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/LobbyLobs/WordleIT">View Demo</a>
+    <a href="http://wordleit.rf.gd">View Demo</a>
     .
   </p>
 </p>
