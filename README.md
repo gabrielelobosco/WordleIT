@@ -24,8 +24,7 @@
 
 ## About The Project
 
-![Screen Shot](https://i.ibb.co/SvFnyFG/immagine-2023-05-27-232030750.png)
-
+![Screen Shot](https://i.ibb.co/WtjGsGC/immagine-2023-05-28-110526346.png)
 My italian version of the famous Wordle game. I have worked on it on my own, applying all my skills to obtain the best result. I am still working on it because it has a lot of bugs right now but I hope to finish it soon!
 
 Some game features:
