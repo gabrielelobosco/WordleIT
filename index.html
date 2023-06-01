@@ -319,7 +319,7 @@ window.addEventListener("keydown", function(e) {
 	let errate = [];
 	elems = document.querySelectorAll("[id='underline']");
 
-    if (value!="ENTER" && value!="BACKSPACE") {
+    if (value!="ENTER" && value!="BACKSPACE" && regex.test(value)) {
 	elems[c].setAttribute('data-before', value);
 	c++;
     }
