@@ -330,7 +330,7 @@ window.addEventListener("keydown", function(e) {
             }
         }
 
-	if(c % 5 == 0 && ent==1) {
+	if(c % 5 == 0 && ent==1 && value.match(/[a-z]/i)) {
         ent = 0;
 		l = 0;
 		for(var i = 5 * ra; i < 5 * r; i++) {
